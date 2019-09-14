@@ -201,6 +201,17 @@
     left: 55%;
     transform: rotate(2deg) translateX(-50%);
   }
+
+  .lLetter {
+    font-size: 50px;
+  }
+  li .active {
+    background: unset;
+    color: inherit;
+    font-weight: unset;
+    border: unset;
+    opacity: .7;
+  }
 }
 
 @media (max-width: 768px) {
@@ -243,6 +254,9 @@
   }
   .pInfo {
     width: 100%;
+  }
+  .lLetter {
+    font-size: 20px;
   }
 }
 
