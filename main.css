@@ -1,0 +1,554 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('../fonts/Montserrat-Regular.woff') format('woff'),
+      url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+      url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('../fonts/Montserrat-Bold.woff') format('woff'),
+      url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+      url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff'),
+      url('../fonts/Roboto-Regular.ttf') format('truetype'),
+      url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat-Regular';
+  background: #fff;
+  color: #fff;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+header { 
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
+  width: 170px;
+  text-align: center;
+  border-radius: 15px;
+  opacity: .75;
+  transition: all .2s ease-in;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+li .active {
+  background: rgba(255, 255, 255, .7);
+  color: #000;
+  font-weight: bold;
+  border: 2px solid #000;
+  opacity: 1;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 50px;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.hSection {
+  background: url('../img/Hinulugang_Taktak.jpg');
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+.hSection::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 1));
+  background-attachment: fixed;
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;
+}
+
+.heroText h1 {
+  font-size: 80px;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.heroText h3 {
+  font-size: 45px;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.amSection {
+  min-height: 100vh;
+  display: flex;
+}
+
+.amInfo {
+  width: 50%;
+  position: relative;
+  background: rgb(27, 27, 27);
+}
+
+.amText {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.amText h4 {
+  font-size: 70px;
+  font-family: 'Roboto-Regular';
+}
+
+.amText p {
+  font-size: 25px;
+}
+
+.amImg {
+  width: 50%;
+  min-height: 100vh;
+  position: relative;
+  background: url('../img/20170413-holyweek-pilgrims-dv-2.jpg');
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.amImg::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 1));
+  background-attachment: fixed;
+}
+
+.amImg img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: left;
+}
+
+.pSection {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 110px;
+  background: linear-gradient(to right, rgb(27, 27, 27) 50%, rgb(0, 0, 0));
+}
+
+.pSection h4 {
+  font-family: 'Roboto-Regular';
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.pCard {
+  position: relative;
+}
+
+.pCard:hover .pImg {
+  transform: translateY(0px);
+}
+
+.pCard:hover .pInfo {
+  transform: translateY(0px);
+}
+
+.pImg {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 280px;
+  transform: translateY(120px);
+  transition: all .3s ease-in; 
+}
+
+.pImg img {
+  width: 100%;
+  height: 280px;
+}
+
+.pInfo {
+  width: 100%;
+  background: #2f2f2f;
+  padding: 20px;
+  transform: translateY(-80px);
+  transition: all .3s ease-in;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pInfo:hover {
+  background: #f5f5f5;
+}
+
+.pInfo:hover h5 {
+  color: #000;
+}
+
+
+.pInfo h5 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.pLinks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pLinks a {
+  color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 40px;
+  background: rgb(27, 27, 27);
+  border-radius: 10px;
+  border: 1px solid rgb(27, 27, 27);
+  transition: all .3s ease-in;
+}
+
+.pLinks a:hover {
+  color: rgb(27, 27, 27);
+  background: #f5f5f5;
+}
+
+.rSection {
+  min-height: 100vh;
+  text-align: center;
+  padding: 110px 0;
+  background: url('../img/night-5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.rSection::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+}
+
+.rSection h4 {
+  position: relative;
+  z-index: 3;
+  font-family: 'Roboto-Regular';
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+
+.resumeImg {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 300px;
+}
+
+.resumeImg img {
+  width: 300px;
+  height: 400px;
+}
+
+.rImgh, .rImgs {
+  position: absolute;
+}
+
+.rImgh {
+  transform: rotate(-5deg);
+  left: 300px;
+}
+
+.rImgs {
+  transform: rotate(2deg);
+  left: 360px;
+}
+
+.rdownload {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.rdownloadc {
+  margin-top: 100px;
+}
+
+.rdownloadc a {
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: #000;
+  font-family: 'Montserrat-Bold';
+  transition: all .3s ease-in;
+}
+
+.rdownloadc a:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+}
+
+.rdownload a {
+  width: 100%;
+  display: inline-block;
+}
+
+.hcopy {
+  margin-bottom: 30px;
+}
+
+.cSection {
+  min-height: 100vh;
+  display: flex;
+  padding-top: 110px;
+  background: url('../img/February022015_1827.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.cSection:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+}
+
+.cInfo {
+  width: 100%;
+  position: relative;
+  text-shadow: 3px 3px 8px #000;
+}
+
+.cInfo h4 {
+  font-family: 'Roboto-Regular';
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.cInfo h5 {
+  font-family: 'Montserrat-Bold';
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.cInfo h6 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+
+.cInfoText {
+  position: absolute;
+  width: 80%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.cLinks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  z-index: 3;
+}
+
+.cLinks li {
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 0 5px;
+  transition: all .2s ease-in 
+}
+
+.cLinks a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 30px;
+  transition: all .2s ease-in 
+}
+
+.cLinks li:hover {
+  background: #fff;
+}
+
+.cLinks li:hover a {
+  color: #000;
+}
+
+.lSection {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.lLetter {
+  text-transform: uppercase;
+  font-size: 100px;
+  width: 10%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  opacity: 0;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  animation-name: loading;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    background: #000;
+    opacity: 0;
+  }
+  12.5% {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+    background: #2f2f2f;
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    background: #000;
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    background: #000;
+    opacity: 0;
+  }
+}
+
+.lLetter:nth-child(2) {
+  animation-delay: 1s;
+}
+.lLetter:nth-child(3) {
+  animation-delay: 2s;
+}
+.lLetter:nth-child(4) {
+  animation-delay: 3s;
+}
+.lLetter:nth-child(5) {
+  animation-delay: 4s;
+}
+.lLetter:nth-child(6) {
+  animation-delay: 5s;
+}
+.lLetter:nth-child(7) {
+  animation-delay: 6s;
+}
+.lLetter:nth-child(8) {
+  animation-delay: 7s;
+}
