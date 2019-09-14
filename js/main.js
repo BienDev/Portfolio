@@ -1,3 +1,7 @@
+$(window).on("load",function(){
+  $(".lSection").fadeOut("slow");
+});
+
 // Get the container element
 var btnContainer = document.getElementById("myDIV");
 
