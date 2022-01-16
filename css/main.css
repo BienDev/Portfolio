@@ -1036,4 +1036,23 @@ a:hover {
   .portfolio-content a {
     width: 100%;
   }
+  .right-nav a {
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+  }
+  .about-section-right .above-buttons {
+    flex-wrap: wrap;
+  }
+  .about-section-right .above-buttons a:nth-child(1),.contact-section-right .above-buttons a:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .about-section-right .above-buttons a,.contact-section-right .above-buttons a {
+    margin-right: 0;
+    width: 100%;
+}
+.contact-section-left {
+  padding: 20px 15px;
+}
 }
