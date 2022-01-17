@@ -51,10 +51,15 @@ li {
   margin: 0 auto;
 }
 
+body {
+  background-color: #121212;
+}
+
 .motion-background {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   left: 0;
   top: 0;
   z-index: -1;
@@ -222,6 +227,11 @@ header {
   justify-content: space-between;
   padding: 0 5%;
   z-index: 20;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+  background-color: #000;
 }
 
 header > * {
@@ -330,7 +340,6 @@ a:hover {
 }
 
 .about-section-left {
-  margin-top: 130px;
   text-align: center;
 }
 
@@ -487,6 +496,7 @@ a:hover {
 .portfolio-section-right a {
   display: flex;
   width: 300px;
+  padding: 0 30px;
   height: 70px;
   color: #2F89FC;
   background-color: rgba(255, 255, 255, 0.1);
