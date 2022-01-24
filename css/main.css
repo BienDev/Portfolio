@@ -583,7 +583,7 @@ a:hover {
   width: 50%;
 }
 
-.contact-section-left {
+.contact-section-left form {
   display: flex;
   flex-wrap: wrap;
   max-width: 650px;
@@ -830,6 +830,13 @@ a {
 a:hover {
   background-color: #fff;
   color: #2F89FC;
+}
+
+.thankyou-section {
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 /* Footer */
