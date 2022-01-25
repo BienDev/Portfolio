@@ -1067,6 +1067,9 @@ a:hover {
   .portfolio-box {
     max-width: 100%;
   }
+  .services-section-contain div ul li a {
+    font-size: 20px;
+}
 }
 
 @media (max-width: 568px) {
