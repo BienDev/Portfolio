@@ -893,7 +893,7 @@ a:hover {
     height: 100px;
     width: 80px;
   }
-  .services-section-contain div ul li {
+  .services-section-contain div ul li a {
     font-size: 30px;
   }
   .portfolio-section-left div {
@@ -957,7 +957,7 @@ a:hover {
     font-size: 18px;
     padding: 10px;
   }
-  .services-section-contain div ul li {
+  .services-section-contain div ul li a {
     font-size: 25px;
   }
   .portfolio-section-right h4 {
