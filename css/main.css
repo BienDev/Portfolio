@@ -93,7 +93,7 @@ body {
   transform: rotate(30deg);
   left: -20px;
   top: 150px;
-  animation: random-spin1 240s ease-in infinite alternate;
+  animation: random-spin1 1800s ease-in infinite alternate;
 }
 
 @keyframes random-spin1 {
@@ -115,7 +115,7 @@ body {
   transform: rotate(40deg);
   left: 30%;
   bottom: 150px;
-  animation: random-spin2 240s ease-in infinite alternate;
+  animation: random-spin2 1800s ease-in infinite alternate;
 }
 
 @keyframes random-spin2 {
@@ -137,7 +137,7 @@ body {
   transform: rotate(70deg);
   right: 30%;
   top: 100px;
-  animation: random-spin3 240s ease-in infinite alternate;
+  animation: random-spin3 1800s ease-in infinite alternate;
 }
 
 @keyframes random-spin3 {
@@ -159,7 +159,7 @@ body {
   transform: rotate(60deg);
   right: -40px;
   top: 200px;
-  animation: random-spin4 240s ease-in infinite alternate;
+  animation: random-spin4 1800s ease-in infinite alternate;
 }
 
 @keyframes random-spin4 {
@@ -181,7 +181,7 @@ body {
   transform: rotate(55deg);
   left: -200px;
   top: -200px;
-  animation: random-spin5 240s ease-in infinite alternate;
+  animation: random-spin5 1800s ease-in infinite alternate;
 }
 
 @keyframes random-spin5 {
@@ -203,7 +203,7 @@ body {
   transform: rotate(55deg);
   right: -200px;
   bottom: -200px;
-  animation: random-spin6 240s ease-in infinite alternate;
+  animation: random-spin6 1800s ease-in infinite alternate;
 }
 
 @keyframes random-spin6 {
