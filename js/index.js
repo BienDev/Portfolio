@@ -1,5 +1,4 @@
 const mediaQuery = window.matchMedia('(max-width: 768px)');
-
 const maxMediaQuery = window.matchMedia('(min-width: 769px)');
 
 function handleTabletChange(e) {
@@ -103,3 +102,4 @@ function init() {
   const wait = txtElement.getAttribute('data-wait');
   new TypeWriter(txtElement, words, wait);
 }
+
