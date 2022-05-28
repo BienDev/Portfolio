@@ -20,7 +20,9 @@ window.addEventListener('load', function () {
     }
   }
 
-  const mathQuest = document.getElementById("question");
+  
+})
+const mathQuest = document.getElementById("question");
 
   function formValidation() {
     console.log("running")
@@ -31,4 +33,3 @@ window.addEventListener('load', function () {
     }
     return true;
   }
-})
