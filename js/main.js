@@ -26,7 +26,7 @@ const mathQuest = document.getElementById("question");
 
   function formValidation() {
     console.log("running")
-    if(mathQuest.value !== 24) {
+    if(mathQuest.value != 24) {
       event.preventDefault();
       alert("Wrong Answer on the question");
       return false;
