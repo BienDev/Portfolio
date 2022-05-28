@@ -23,6 +23,7 @@ window.addEventListener('load', function () {
   const mathQuest = document.getElementById("question");
 
   function formValidation() {
+    console.log("running")
     if(mathQuest.value !== 11) {
       event.preventDefault();
       alert("Wrong Answer on the question");
