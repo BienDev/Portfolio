@@ -27,6 +27,8 @@ window.addEventListener('load', function () {
     if(mathQuest.value !== 24) {
       event.preventDefault();
       alert("Wrong Answer on the question");
+      return false;
     }
+    return true;
   }
 })
