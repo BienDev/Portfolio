@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
 
   function formValidation() {
     console.log("running")
-    if(mathQuest.value !== 11) {
+    if(mathQuest.value !== 24) {
       event.preventDefault();
       alert("Wrong Answer on the question");
     }
