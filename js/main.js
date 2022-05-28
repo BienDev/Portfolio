@@ -19,4 +19,13 @@ window.addEventListener('load', function () {
       background.classList.add('motion-background-opacity');
     }
   }
+
+  const mathQuest = document.getElementById("question");
+
+  function formValidation() {
+    if(mathQuest.value !== 11) {
+      event.preventDefault();
+      alert("Wrong Answer on the question");
+    }
+  }
 })
